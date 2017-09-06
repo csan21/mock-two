@@ -1,19 +1,60 @@
 html,
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-image: url(../img/bg-pattern.jpg); }
 
 .top-border {
-  background-image: url(../img/strip-header.jpg);
+  background-image: url(../img/strip-footer.jpg);
   margin: 0 auto;
   width: 100%;
-  height: 5px; }
+  height: 7px; }
 
-header {
-  background-color: black;
-  height: 50px;
+.container {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #fff;
+  border-right: 2px solid lightgrey;
+  border-left: 2px solid lightgrey; }
+
+.content, header {
+  margin: 0 auto;
+  width: 90%; }
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #fff;
+  border-right: 2px solid lightgrey;
+  border-left: 2px solid lightgrey; }
+
+.content, header {
+  margin: 0 auto;
+  width: 90%; }
+
+header nav, header ul.nav-top,
+header ul.nav-main {
+  list-style-type: none;
+  display: inline;
   width: 100%;
-  position: static;
-  margin: 0 auto; }
+  padding: 0; }
+
+div.main-splash {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; }
+  div.main-splash > .motto {
+    display: inline;
+    font-size: 1em;
+    width: 33%; }
+    div.main-splash > .motto > .logo {
+      display: inline;
+      width: 33%;
+      align-items: center; }
+      div.main-splash > .motto > .logo > .search-box {
+        display: inline;
+        width: 33%; }
 
 /*# sourceMappingURL=main.css.map */

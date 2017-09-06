@@ -1,7 +1,42 @@
+@import 'grid';
+
 header {
-  background-color: black;
-  height: 50px;
+  @extend .content;
+
+  nav {
+    list-style-type: none;
+    display: inline;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+ul.nav-top,
+ul.nav-main {
+  @extend nav;
+}
+
+div.main-splash {
   width: 100%;
-  position: static;
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  > .motto {
+    display: inline;
+    font-size: 1em;
+    width: 33%;
+
+    > .logo {
+      display: inline;
+      width: 33%;
+      align-items: center;
+
+      > .search-box {
+        display: inline;
+        width: 33%;
+      }
+    }
+  }
 }
