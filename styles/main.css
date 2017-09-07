@@ -51,6 +51,7 @@ body {
   display: flex;
   text-align: center; }
   .features > .box {
+    width: 25%;
     margin-left: 20px; }
 
 .about {
@@ -102,6 +103,7 @@ body {
   display: flex;
   text-align: center; }
   .features > .box {
+    width: 25%;
     margin-left: 20px; }
 
 .about {
@@ -123,29 +125,69 @@ body {
 #links-social {
   width: 30%; }
 
-header nav, header ul.nav-top,
-header ul.nav-main {
+header {
+  margin-bottom: 20px; }
+
+nav, .nav-top {
   list-style-type: none;
-  display: inline;
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
+
+.nav-top {
+  display: inline;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  box-sizing: border-box; }
+  .nav-top > li {
+    float: left;
+    padding: 1%; }
+    .nav-top > li > a {
+      text-decoration: none;
+      color: grey; }
+
+.nav-top li:nth-child(2),
+.nav-top li:nth-child(3) {
+  border-right: none; }
+
+.nav-top li:nth-child(5),
+.nav-top li:nth-child(4),
+.nav-top li:nth-child(3) {
+  float: right; }
 
 div.main-splash {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between; }
-  div.main-splash > .motto {
-    display: inline;
-    font-size: 1em;
-    width: 33%; }
-    div.main-splash > .motto > .logo {
-      display: inline;
-      width: 33%;
-      align-items: center; }
-      div.main-splash > .motto > .logo > .search-box {
-        display: inline;
-        width: 33%; }
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center; }
+  div.main-splash > .motto, div.main-splash > .search {
+    font-size: 0.7em;
+    width: 25%;
+    margin: 0;
+    padding: 0; }
+  div.main-splash > .search {
+    font-size: 1em; }
+    div.main-splash > .search > input {
+      margin-top: 10%; }
+  div.main-splash > .logo {
+    text-align: center;
+    width: 45%; }
+    div.main-splash > .logo > img {
+      margin-top: 2%; }
+
+.main ul {
+  list-style-type: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0; }
+  .main ul > li {
+    padding: 10px; }
+    .main ul > li > a {
+      color: black;
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
