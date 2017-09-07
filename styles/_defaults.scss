@@ -1,14 +1,16 @@
+$main-blue: #7494b7;
+
 html,
 body {
   width: 100%;
   background-image: url(../img/bg-pattern.jpg);
 }
 
-.top-border {
+.pattern-border {
   background-image: url(../img/strip-footer.jpg);
   margin: 0 auto;
   width: 100%;
-  height: 7px;
+  height: 8px;
 }
 
 .line-break {
@@ -31,4 +33,10 @@ body {
     from(lightgrey),
     to(#efefef)
   );
+}
+
+h1,
+h2,
+h3 {
+  color: $main-blue;
 }

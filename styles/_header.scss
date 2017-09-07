@@ -14,10 +14,12 @@ nav {
 
 .nav-top {
   @extend nav;
-  display: inline;
+  display: inline-block;
   margin-top: 1%;
-  margin-bottom: 1%;
+  margin-bottom: 0;
   box-sizing: border-box;
+  color: #666;
+  font-style: italic;
 
   > li {
     float: left;
@@ -30,9 +32,9 @@ nav {
   }
 }
 
-.nav-top li:nth-child(2),
-.nav-top li:nth-child(3) {
-  border-right: none;
+.nav-top li:nth-child(4),
+.nav-top li:nth-child(5) {
+  border-right: solid #d8d8d8 1px;
 }
 
 .nav-top li:nth-child(5),
