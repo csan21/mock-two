@@ -1,9 +1,26 @@
 $main-blue: #7494b7;
 
+$main-font: Georgia, Times, "Times New Roman", serif;
+$cursive-font: "Allura", cursive;
+
 html,
 body {
   width: 100%;
   background-image: url(../img/bg-pattern.jpg);
+  font-family: $main-font;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: lighter;
 }
 
 .pattern-border {
@@ -35,8 +52,6 @@ body {
   );
 }
 
-h1,
-h2,
-h3 {
-  color: $main-blue;
+.cursive {
+  font-family: $cursive-font;
 }

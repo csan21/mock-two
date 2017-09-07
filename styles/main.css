@@ -1,7 +1,19 @@
 html,
 body {
   width: 100%;
-  background-image: url(../img/bg-pattern.jpg); }
+  background-image: url(../img/bg-pattern.jpg);
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9em;
+  font-weight: 100; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+h1,
+h2,
+h3 {
+  font-weight: lighter; }
 
 .pattern-border {
   background-image: url(../img/strip-footer.jpg);
@@ -21,32 +33,74 @@ body {
   background: grey;
   background: -webkit-gradient(radial, 50% 40%, 0, 50% 40%, 350, from(lightgrey), to(#efefef)); }
 
+.cursive {
+  font-family: "Allura", cursive; }
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #fff;
+  border-right: 2px solid lightgrey;
+  border-left: 2px solid lightgrey; }
+
+.content, section, header {
+  margin: 0 auto;
+  width: 90%; }
+
+section {
+  overflow: hidden; }
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #fff;
+  border-right: 2px solid lightgrey;
+  border-left: 2px solid lightgrey; }
+
+.content, section, header {
+  margin: 0 auto;
+  width: 90%; }
+
+section {
+  overflow: hidden; }
+
+html,
+body {
+  width: 100%;
+  background-image: url(../img/bg-pattern.jpg);
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9em;
+  font-weight: 100; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
 h1,
 h2,
 h3 {
-  color: #7494b7; }
+  font-weight: lighter; }
 
-.container {
+.pattern-border {
+  background-image: url(../img/strip-footer.jpg);
   margin: 0 auto;
-  width: 60%;
-  background-color: #fff;
-  border-right: 2px solid lightgrey;
-  border-left: 2px solid lightgrey; }
+  width: 100%;
+  height: 8px; }
 
-.content, section, header {
+.line-break {
   margin: 0 auto;
-  width: 90%; }
+  width: 100%;
+  border-bottom: 1px solid lightgrey; }
 
-.container {
+.line-break-darker {
   margin: 0 auto;
-  width: 60%;
-  background-color: #fff;
-  border-right: 2px solid lightgrey;
-  border-left: 2px solid lightgrey; }
+  width: 100%;
+  height: 2px;
+  background: grey;
+  background: -webkit-gradient(radial, 50% 40%, 0, 50% 40%, 350, from(lightgrey), to(#efefef)); }
 
-.content, section, header {
-  margin: 0 auto;
-  width: 90%; }
+.cursive {
+  font-family: "Allura", cursive; }
 
 header {
   margin-bottom: 20px; }
@@ -85,13 +139,15 @@ div.main-splash {
   margin-top: 1em;
   margin-bottom: 1em;
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center; }
   div.main-splash > .motto, div.main-splash > .search {
-    font-size: 0.7em;
+    font-size: 0.9em;
     width: 25%;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    font-family: "Allura", cursive; }
   div.main-splash > .search {
     font-size: 1em; }
     div.main-splash > .search > input {
@@ -105,15 +161,58 @@ div.main-splash {
 .main ul {
   list-style-type: none;
   box-sizing: border-box;
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center; }
   .main ul > li {
-    padding: 10px; }
+    padding: 5px; }
     .main ul > li > a {
+      display: inline;
       color: black;
       text-decoration: none; }
+
+html,
+body {
+  width: 100%;
+  background-image: url(../img/bg-pattern.jpg);
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9em;
+  font-weight: 100; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+h1,
+h2,
+h3 {
+  font-weight: lighter; }
+
+.pattern-border {
+  background-image: url(../img/strip-footer.jpg);
+  margin: 0 auto;
+  width: 100%;
+  height: 8px; }
+
+.line-break {
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid lightgrey; }
+
+.line-break-darker {
+  margin: 0 auto;
+  width: 100%;
+  height: 2px;
+  background: grey;
+  background: -webkit-gradient(radial, 50% 40%, 0, 50% 40%, 350, from(lightgrey), to(#efefef)); }
+
+.cursive {
+  font-family: "Allura", cursive; }
 
 button {
   background: #fffcfc;
@@ -122,11 +221,12 @@ button {
   background-image: -ms-linear-gradient(top, #fffcfc, #ffcccc);
   background-image: -o-linear-gradient(top, #fffcfc, #ffcccc);
   background-image: linear-gradient(to bottom, #fffcfc, #ffcccc);
-  color: #242424;
-  font-size: 10px;
   padding: 5px 10px 5px 10px;
   border: solid #d8d8d8 1px;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #242424;
+  font-size: 0.5em;
+  font-family: Georgia, Times, "Times New Roman", serif; }
 
 button:hover {
   background: #ffcccc;
@@ -145,7 +245,8 @@ input {
   background-image: -o-linear-gradient(top, #e9e9e9, #fcfcfc);
   background-image: linear-gradient(to bottom, #e9e9e9, #fcfcfc);
   border: solid #d8d8d8 1px;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: Georgia, Times, "Times New Roman", serif; }
 
 .slide-show {
   background-position: right center;
@@ -162,14 +263,36 @@ input {
     justify-content: center;
     box-sizing: border-box;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); }
+    .slide-show > .slide-overlay > h1 {
+      color: #7494b7;
+      text-shadow: 1px 1px #fff;
+      font-size: 3.5em; }
 
 .features {
-  margin-top: 20px;
+  margin-top: 3%;
+  margin-bottom: 3%;
   display: flex;
   text-align: center; }
   .features > .box {
     width: 25%;
-    margin-left: 20px; }
+    margin-left: 10px; }
+    .features > .box > h1 {
+      font-size: 2.2em;
+      color: #7494b7; }
+    .features > .box > p.cursive {
+      font-size: 1.8em; }
+
+.mission {
+  margin-top: 3%;
+  margin-bottom: 0%; }
+  .mission > h1 {
+    font-size: 2.2em;
+    color: #7494b7; }
+  .mission > p {
+    font-size: 1.1em; }
+  .mission > p.cursive {
+    font-size: 1.8em;
+    float: right; }
 
 .about {
   display: flex;
@@ -179,6 +302,9 @@ input {
     text-align: left;
     width: 15%;
     padding: 5px; }
+    .about > .links-list > h2 {
+      color: #7494b7;
+      font-size: 1.4em; }
     .about > .links-list > ul {
       list-style-type: none;
       padding: 0; }
@@ -187,7 +313,7 @@ input {
         .about > .links-list > ul > li > a {
           text-decoration: none;
           color: #000;
-          font-size: .8em; }
+          font-size: .9em; }
 
 #links-contact {
   width: 25%; }

@@ -1,3 +1,5 @@
+@import 'defaults';
+
 button {
   background: #fffcfc;
   background-image: -webkit-linear-gradient(top, #fffcfc, #ffcccc);
@@ -5,11 +7,12 @@ button {
   background-image: -ms-linear-gradient(top, #fffcfc, #ffcccc);
   background-image: -o-linear-gradient(top, #fffcfc, #ffcccc);
   background-image: linear-gradient(to bottom, #fffcfc, #ffcccc);
-  color: #242424;
-  font-size: 10px;
   padding: 5px 10px 5px 10px;
   border: solid #d8d8d8 1px;
   text-decoration: none;
+  color: #242424;
+  font-size: 0.5em;
+  font-family: $main-font;
 }
 
 button:hover {
@@ -31,4 +34,5 @@ input {
   background-image: linear-gradient(to bottom, #e9e9e9, #fcfcfc);
   border: solid #d8d8d8 1px;
   text-decoration: none;
+  font-family: $main-font;
 }
