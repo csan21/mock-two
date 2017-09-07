@@ -4,6 +4,8 @@
 header {
   @extend .content;
   margin-bottom: 20px;
+  position: relative;
+  height: 100%;
 }
 
 nav {
@@ -29,6 +31,10 @@ nav {
     > a {
       text-decoration: none;
       color: grey;
+
+      &:hover {
+        color: #fa9696;
+      }
     }
   }
 }
@@ -44,7 +50,7 @@ nav {
   float: right;
 }
 
-div.main-splash {
+.main-splash {
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -54,10 +60,10 @@ div.main-splash {
   text-align: center;
 
   > .motto {
-    font-size: 0.9em;
     width: 25%;
     margin: 0;
     padding: 0;
+    font-size: 0.9em;
     font-family: $cursive-font;
   }
 
@@ -88,8 +94,9 @@ div.main-splash {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
   text-align: center;
 
   > li {
@@ -101,4 +108,42 @@ div.main-splash {
       text-decoration: none;
     }
   }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+
+  > li:hover {
+    background-color: lightgrey;
+  }
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgrey;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .droplink {
+  background-color: #3e8e41;
 }

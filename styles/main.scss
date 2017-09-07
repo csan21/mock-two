@@ -4,17 +4,20 @@
 @import 'buttons';
 
 .slide-show {
+  margin-top: -1%;
   background-position: right center;
   background-repeat: no-repeat;
-  height: 350px;
+  background-size: cover;
+  width: 90%;
+  height: 45%;
 
   > .slide-overlay {
     position: relative;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin: 0 auto;
     margin-right: 50px;
-    width: 30%;
+    width: 35%;
     height: 100%;
     justify-content: center;
     box-sizing: border-box;
@@ -26,8 +29,12 @@
 
     > h1 {
       color: $main-blue;
-      text-shadow: 1px 1px #fff;
+      text-shadow: 2px 2px #fff;
       font-size: 3.5em;
+    }
+
+    > p.cursive {
+      font-size: 1.8em;
     }
   }
 }
@@ -98,6 +105,10 @@
           text-decoration: none;
           color: #000;
           font-size: .9em;
+
+          &:hover {
+            color: #fa9696;
+          }
         }
       }
     }

@@ -1,10 +1,10 @@
 html,
 body {
   width: 100%;
-  background-image: url(../img/bg-pattern.jpg);
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 0.9em;
-  font-weight: 100; }
+  font-weight: 100;
+  background-image: url(../img/bg-pattern.jpg); }
 
 a {
   text-decoration: none;
@@ -45,9 +45,7 @@ h3 {
 
 .content, section, header {
   margin: 0 auto;
-  width: 90%; }
-
-section {
+  width: 90%;
   overflow: hidden; }
 
 .container {
@@ -59,18 +57,16 @@ section {
 
 .content, section, header {
   margin: 0 auto;
-  width: 90%; }
-
-section {
+  width: 90%;
   overflow: hidden; }
 
 html,
 body {
   width: 100%;
-  background-image: url(../img/bg-pattern.jpg);
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 0.9em;
-  font-weight: 100; }
+  font-weight: 100;
+  background-image: url(../img/bg-pattern.jpg); }
 
 a {
   text-decoration: none;
@@ -103,7 +99,9 @@ h3 {
   font-family: "Allura", cursive; }
 
 header {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative;
+  height: 100%; }
 
 nav, .nav-top {
   list-style-type: none;
@@ -124,6 +122,8 @@ nav, .nav-top {
     .nav-top > li > a {
       text-decoration: none;
       color: grey; }
+      .nav-top > li > a:hover {
+        color: #fa9696; }
 
 .nav-top li:nth-child(4),
 .nav-top li:nth-child(5) {
@@ -134,7 +134,7 @@ nav, .nav-top {
 .nav-top li:nth-child(3) {
   float: right; }
 
-div.main-splash {
+.main-splash {
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -142,20 +142,20 @@ div.main-splash {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center; }
-  div.main-splash > .motto, div.main-splash > .search {
-    font-size: 0.9em;
+  .main-splash > .motto, .main-splash > .search {
     width: 25%;
     margin: 0;
     padding: 0;
+    font-size: 0.9em;
     font-family: "Allura", cursive; }
-  div.main-splash > .search {
+  .main-splash > .search {
     font-size: 1em; }
-    div.main-splash > .search > input {
+    .main-splash > .search > input {
       margin-top: 10%; }
-  div.main-splash > .logo {
+  .main-splash > .logo {
     text-align: center;
     width: 45%; }
-    div.main-splash > .logo > img {
+    .main-splash > .logo > img {
       margin-top: 2%; }
 
 .main ul {
@@ -166,8 +166,9 @@ div.main-splash {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
   text-align: center; }
   .main ul > li {
     padding: 5px; }
@@ -176,13 +177,43 @@ div.main-splash {
       color: black;
       text-decoration: none; }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 1em; }
+  .dropdown > li:hover {
+    background-color: lightgrey; }
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content a:hover {
+  background-color: lightgrey; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.dropdown:hover .droplink {
+  background-color: #3e8e41; }
+
 html,
 body {
   width: 100%;
-  background-image: url(../img/bg-pattern.jpg);
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 0.9em;
-  font-weight: 100; }
+  font-weight: 100;
+  background-image: url(../img/bg-pattern.jpg); }
 
 a {
   text-decoration: none;
@@ -246,27 +277,35 @@ input {
   background-image: linear-gradient(to bottom, #e9e9e9, #fcfcfc);
   border: solid #d8d8d8 1px;
   text-decoration: none;
-  font-family: Georgia, Times, "Times New Roman", serif; }
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  height: 2em;
+  width: 80%; }
 
 .slide-show {
+  margin-top: -1%;
   background-position: right center;
   background-repeat: no-repeat;
-  height: 350px; }
+  background-size: cover;
+  width: 90%;
+  height: 45%; }
   .slide-show > .slide-overlay {
     position: relative;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin: 0 auto;
     margin-right: 50px;
-    width: 30%;
+    width: 35%;
     height: 100%;
     justify-content: center;
     box-sizing: border-box;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); }
     .slide-show > .slide-overlay > h1 {
       color: #7494b7;
-      text-shadow: 1px 1px #fff;
+      text-shadow: 2px 2px #fff;
       font-size: 3.5em; }
+    .slide-show > .slide-overlay > p.cursive {
+      font-size: 1.8em; }
 
 .features {
   margin-top: 3%;
@@ -314,6 +353,8 @@ input {
           text-decoration: none;
           color: #000;
           font-size: .9em; }
+          .about > .links-list > ul > li > a:hover {
+            color: #fa9696; }
 
 #links-contact {
   width: 25%; }
