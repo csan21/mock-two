@@ -79,4 +79,8 @@ section {
 
 #links-social {
   width: 30%;
+
+  > .email {
+    display: flex;
+  }
 }
