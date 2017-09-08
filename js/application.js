@@ -6,7 +6,7 @@ $(document).ready(function() {
   });
 
   $('.about').on('click', '.title', function() {
-    $(this).next('.collapsible').toggle(200);
+    $(this).next('.collapsible').toggle(300);
     $(this).parents('.links-list').toggleClass('active');
   });
 });
