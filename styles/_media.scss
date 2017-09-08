@@ -1,0 +1,51 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-top li:nth-child(2),
+  .nav-top li:nth-child(3),
+  .main,
+  .search,
+  .motto {
+    display: none;
+  }
+
+  body {
+    font-size: 2em;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .main-splash .logo,
+  .features .box,
+  .about .links-list {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    height: 100%;
+    margin-bottom: 2%;
+  }
+
+  .about,
+  .features,
+  .main-splash {
+    flex-wrap: wrap;
+  }
+
+  .slide-show {
+    display: none;
+  }
+
+  .box img,
+  .main-splash .logo img {
+    width: 80%;
+    object-fit: contain;
+  }
+
+  .about .collapsible {
+    display: none;
+  }
+
+  .about .links-list.active .title {
+    color: #fa9696;
+  }
+}
